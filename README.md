@@ -15,5 +15,8 @@ https://medium.com/jspoint/how-to-create-an-executable-exe-file-from-javascript-
 Angular Material Responsive Table
 https://stackblitz.com/edit/mat-table-responsive
 
+Angular 10|9|8 Edit/ Add/ Delete Rows in Material Table with using Dialogs inline Row Operation
+https://www.freakyjolly.com/angular-material-table-operations-using-dialog/#.YFhBaK8zZPY
+
 Installing Node-RED as a Windows Service
 http://richardn.ca/2017/06/12/installing-node-red-as-a-windows-service/
