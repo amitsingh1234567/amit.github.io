@@ -20,3 +20,6 @@ https://www.freakyjolly.com/angular-material-table-operations-using-dialog/#.YFh
 
 Installing Node-RED as a Windows Service
 http://richardn.ca/2017/06/12/installing-node-red-as-a-windows-service/
+
+Angular file upload process bar to show user how many persent file are uploaded
+https://stackblitz.com/edit/angular-file-upload
