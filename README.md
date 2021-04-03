@@ -23,3 +23,9 @@ http://richardn.ca/2017/06/12/installing-node-red-as-a-windows-service/
 
 Angular file upload process bar to show user how many persent file are uploaded
 https://stackblitz.com/edit/angular-file-upload
+
+// Import custom property focusfully us ::ng-deep or !important
+ ::ng-deep .mat-radio-button.mat-accent .mat-radio-ripple .mat-ripple-element {
+        opacity: 0.5 !important;     /*click effect color change*/
+        background-color: blue !important;
+  }
