@@ -29,3 +29,6 @@ https://stackblitz.com/edit/angular-file-upload
         opacity: 0.5 !important;     /*click effect color change*/
         background-color: blue !important;
   }
+
+MongoDB Compass - Export, Import, Query Data, Aggregation, Aggregation Pipeline, Creating Views
+https://www.youtube.com/watch?v=TmsCd4nR6c8
