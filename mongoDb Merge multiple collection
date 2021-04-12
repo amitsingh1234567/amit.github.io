@@ -1,0 +1,71 @@
+
+productSchema
+
+	{"_id":{"$oid":"5e2b279134c12c11a015e8f8"},"productPicture":{"url":"https://raw.githubusercontent.com/zainbinfurqan/JewelleryServer/master/uploads/defultproductimg.png"},"isDelete":false,"productName":"product-1","categoryId":{"$oid":"5e2b2bca791b435c0c55c3fd"},"productCode":"code13","productDetail":" this is product","shopId":{"$oid":"5e2ac698c744a7249494449d"},"productPrice":{"$numberInt":"94003"},"__v":{"$numberInt":"0"}}
+	{"_id":{"$oid":"5e2b28e45a22a25614cf6d86"},"productPicture":{"url":"https://raw.githubusercontent.com/zainbinfurqan/JewelleryServer/master/uploads/defultproductimg.png"},"isDelete":false,"productName":"product-2","categoryId":{"$oid":"5e2b2bca791b435c0c55c3fd"},"productCode":"code134","productDetail":" this is product","shopId":{"$oid":"5e2ac698c744a7249494449d"},"productPrice":{"$numberInt":"94003"},"__v":{"$numberInt":"0"}}
+	{"_id":{"$oid":"5e2c4b3ca4844b32e8aefa0f"},"productPicture":{"url":"https://raw.githubusercontent.com/zainbinfurqan/JewelleryServer/master/uploads/defultproductimg.png"},"isDelete":false,"productName":"product-3","categoryId":{"$oid":"5e2b2bca791b435c0c55c3fd"},"productCode":"code134a","productDetail":"this is product","shopId":{"$oid":"5e2b365fc224fd4024d0193f"},"productPrice":{"$numberInt":"94003"},"__v":{"$numberInt":"0"}}
+	{"_id":{"$oid":"5e31806a1c9d4400009a8cfd"},"productPicture":{"url":"https://raw.githubusercontent.com/zainbinfurqan/JewelleryServer/master/uploads/defultproductimg.png"},"isDelete":false,"productName":"product-5","categoryId":{"$oid":"5e2b2bca791b435c0c55c3fd"},"productCode":"code1456a","productDetail":"this is product","shopId":{"$oid":"5e2b365fc224fd4024d0193f"},"productPrice":{"$numberInt":"94003"},"__v":{"$numberInt":"0"}}
+ 
+shopSchema
+	
+	{"_id":{"$oid":"5e2ac698c744a7249494449d"},"isDelete":false,"socialLink":[],"userId":{"$oid":"5e2ac698c744a7249494449c"},"shopName":"diamond replica jewellers","address":"abc","__v":{"$numberInt":"0"}}
+	{"_id":{"$oid":"5e2b364bc224fd4024d0193e"},"isDelete":false,"socialLink":[],"shopName":"nauratan jewellers","address":"abc","userId":{"$oid":"5e2ac698c744a7249494449c"},"__v":{"$numberInt":"0"}}
+	{"_id":{"$oid":"5e2b365fc224fd4024d0193f"},"isDelete":false,"socialLink":[],"shopName":"bashir jewellers","address":"abc","userId":{"$oid":"5e2ac698c744a7249494449c"},"__v":{"$numberInt":"0"}}
+	{"_id":{"$oid":"5e2db2df6b906c47bc2dde89"},"isDelete":false,"socialLink":[],"userId":{"$oid":"5e2db2df6b906c47bc2dde88"},"address":"kashif jewellers","shopName":"Ks","__v":{"$numberInt":"0"}}
+	
+
+categorySchema
+	
+	{"_id":{"$oid":"5e2ac698c744a7249494449d"},"isDelete":false,"socialLink":[],"userId":{"$oid":"5e2ac698c744a7249494449c"},"shopName":"diamond replica jewellers","address":"abc","__v":{"$numberInt":"0"}}
+	{"_id":{"$oid":"5e2b364bc224fd4024d0193e"},"isDelete":false,"socialLink":[],"shopName":"nauratan jewellers","address":"abc","userId":{"$oid":"5e2ac698c744a7249494449c"},"__v":{"$numberInt":"0"}}
+	{"_id":{"$oid":"5e2b365fc224fd4024d0193f"},"isDelete":false,"socialLink":[],"shopName":"bashir jewellers","address":"abc","userId":{"$oid":"5e2ac698c744a7249494449c"},"__v":{"$numberInt":"0"}}
+	{"_id":{"$oid":"5e2db2df6b906c47bc2dde89"},"isDelete":false,"socialLink":[],"userId":{"$oid":"5e2db2df6b906c47bc2dde88"},"address":"kashif jewellers","shopName":"Ks","__v":{"$numberInt":"0"}}
+	
+
+query for join all three tables(collections)
+
+
+
+
+  let matchObj = {};
+
+    if (req.query.shopId) {
+        matchObj['shopId'] = mongoose.Types.ObjectId(req.query.shopId);
+    }
+    let arg = {
+        query: [
+            {
+                $match: { ...matchObj, isDelete: false },
+            },
+            {
+                $lookup: {
+                    from: "shopschemas",
+                    localField: "shopId",
+                    foreignField: "_id",
+                    as: "Shop"
+                }
+            },
+            { $unwind: "$Shop" },
+            {
+                $lookup: {
+                    from: "categoryschemas",
+                    localField: "categoryId",
+                    foreignField: "_id",
+                    as: "Category"
+                }
+            },
+            { $unwind: "$Category" },
+            {
+                $project: {
+                    productName: 1,
+                    productPicture: 1,
+                    productPrice: 1,
+                    productCode: 1,
+                    shopName: "$Shop.shopName",
+                    shopId: "$Shop._id",
+                    categoryName: "$Category.categoryName",
+                }
+            }
+        ],
+
+    }
