@@ -32,3 +32,6 @@ https://stackblitz.com/edit/angular-file-upload
 
 MongoDB Compass - Export, Import, Query Data, Aggregation, Aggregation Pipeline, Creating Views
 https://www.youtube.com/watch?v=TmsCd4nR6c8
+
+MongoDb Merge Multiple Collection
+https://www.youtube.com/watch?v=FNzx0hzX8sY&list=PLolI8AY2AS9aaE4Vx0adwfwUh3XiuVewX
