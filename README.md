@@ -35,3 +35,9 @@ https://www.youtube.com/watch?v=TmsCd4nR6c8
 
 MongoDb Merge Multiple Collection
 https://www.youtube.com/watch?v=FNzx0hzX8sY&list=PLolI8AY2AS9aaE4Vx0adwfwUh3XiuVewX
+
+Angular Material Datepicker : Set Value
+https://www.concretepage.com/angular-material/angular-material-datepicker-set-value
+
+Angular Material Datepicker : Get Value
+https://www.concretepage.com/angular-material/angular-material-datepicker-get-value#:~:text=Get%20Value%20with%20NgModel,-Suppose%20we%20have&text=dateOfBirth%3A%20string%3B,using%20ngModel%20%2C%20find%20the%20code.&text=Whenever%20we%20select%20and%20change,the%20changes%20printed%20by%20dateOfBirth%20.
