@@ -44,3 +44,6 @@ https://www.concretepage.com/angular-material/angular-material-datepicker-get-va
 
 Call a function on Enter event
 https://stackblitz.com/edit/angular-keydown-enter
+
+MEAN Stack developer resume
+https://www.livecareer.com/resume-search/r/mean-stack-web-developer-9b1688c4e94b4fb9bded89734d2e2c4a#:~:text=Resume%20Score%3A%2065%25&text=1%2B%20year%20of%20professional%20experience,MEAN%20stack%20web%20development%20technologies.
