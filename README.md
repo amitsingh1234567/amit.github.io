@@ -1,6 +1,9 @@
 Sunglasses demo site
 https://preview.hasthemes.com/chasmish-v1-tf/chasmish/contact.html
 
+Respond via email for an invite to interview
+https://www.paxus.com.au/news/how-to-respond-via-email-for-an-invite-to-interview/51278/
+
 Sunglasses png images
 https://pngimg.com/imgs/objects/sunglasses/
 https://pngtree.com/so/sunglasses
