@@ -1,3 +1,9 @@
+Remaining Stateless - JWT + Cookies in Node JS(REST)
+https://dev.to/mr_cea/remaining-stateless-jwt-cookies-in-node-js-3lle
+
+Using Cookies with JWT in Node.js
+https://dev.to/franciscomendes10866/using-cookies-with-jwt-in-node-js-8fn
+
 Sunglasses demo site
 https://preview.hasthemes.com/chasmish-v1-tf/chasmish/contact.html
 
