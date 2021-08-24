@@ -1,3 +1,6 @@
+Postgres & Sequelize - Associations || One to One relationship One to Many relationship Many to Many relationship
+https://www.youtube.com/watch?v=A1dAHmzpcX0&t=80s
+
 Paymant integration in any web application
 https://www.youtube.com/watch?v=-Ke6JYqTM_s
 
