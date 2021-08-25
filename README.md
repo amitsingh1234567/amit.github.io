@@ -1,3 +1,6 @@
+Data structure course
+https://www.youtube.com/watch?v=4iFALQ1ACdA
+
 Postgres & Sequelize - Associations || One to One relationship One to Many relationship Many to Many relationship
 https://www.youtube.com/watch?v=A1dAHmzpcX0&t=80s
 
